@@ -1,3 +1,11 @@
+/* /* resource "aws_instance" "roboshop" {
+  ami           = "ami-09c813fb71547fc4f"
+  instance_type = "t3.micro"
+  vpc_security_group_ids = [ aws_security_group.allow_all_bheema_aws.id ]
+  tags = {
+    Name = "HelloWorld"
+  }
+}
 resource "aws_security_group" "allow_all_bheema_aws" {
   name        = "Allow_all_bheema_aws"
   description = "Allow all inbound traffic and all outbound traffic"
@@ -20,5 +28,6 @@ resource "aws_security_group" "allow_all_bheema_aws" {
 
   tags = {
     Name = "aws-terraform-SG"
-  }
-}
+  } 
+} 
+ */
